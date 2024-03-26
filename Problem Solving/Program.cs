@@ -447,6 +447,7 @@ Console.WriteLine($"Final Position: [{finalPosition[0]}, {finalPosition[1]}]");
 */
 
 /*
+ * P6:
 Write a function to find the longest common prefix string amongst an array of strings.
 
 If there is no common prefix, return an empty string "".
@@ -497,5 +498,28 @@ LongestCommonPrefix(testStrings);
 
 */
 
+
+
+
+// P7 : Write a C# program to convert a hexadecimal number to a decimal number.
+
+
+
+
+ int FromHexaToDecimal(string hexaValue)
+{
+
+    int decValue = Convert.ToInt32(hexaValue,16);
+
+
+    return decValue;
+
+}
+
+
+Console.WriteLine("Enter Hexa Value");
+string input=Console.ReadLine();
+int decNumber= FromHexaToDecimal(input);
+Console.WriteLine($"Hexa value : {input} \n Decimal value {decNumber}");
 
 
