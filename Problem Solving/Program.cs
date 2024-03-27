@@ -504,7 +504,7 @@ LongestCommonPrefix(testStrings);
 // P7 : Write a C# program to convert a hexadecimal number to a decimal number.
 
 
-
+/*
 
  int FromHexaToDecimal(string hexaValue)
 {
@@ -522,4 +522,44 @@ string input=Console.ReadLine();
 int decNumber= FromHexaToDecimal(input);
 Console.WriteLine($"Hexa value : {input} \n Decimal value {decNumber}");
 
+*/
 
+
+
+
+
+// P8: Write a C# program to multiply the corresponding elements of two integer arrays.
+
+
+int[] firstArray = { 1, 3, -5, 4 };
+
+int[] secondArray = { 1, 4, -5, -2 };
+
+
+ int[] result = multiplyTwoArrays(firstArray, secondArray);
+
+
+foreach(int element in result)
+{
+    Console.Write(element + " ");
+}
+
+
+    static  int[] multiplyTwoArrays(int[] array1 , int[] array2)
+{
+    if (array1.Length != array2.Length)
+    {
+        Console.WriteLine("The arrays should be the same size");
+        return new int[0];
+    }
+
+    int[] multipliedArray = new int[array1.Length];
+
+    for (int i = 0; i < array1.Length; i++)
+    {
+        multipliedArray[i] = array1[i]*array2[i];
+    }
+
+    return multipliedArray;
+       
+}
