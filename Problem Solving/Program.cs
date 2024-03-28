@@ -569,9 +569,12 @@ foreach(int element in result)
 
 // P9 :  Write a C# program to create a string of four copies, taking the last four characters from a given string.
 // If the given string is less than 4, return the original one.
-
+/*
 string s = "Hello This is your captain speaking";
 
+Console.WriteLine(last4chars(s));
+Console.WriteLine(last4chars(s));
+Console.WriteLine(last4chars(s));
 Console.WriteLine(last4chars(s));
 
 static string last4chars(string s)
@@ -584,4 +587,27 @@ static string last4chars(string s)
    return s.Substring((s.Length - 4), 4);
 
 }
+*/
+
+
+
+// P10 :Write a C# program to check if a given positive number is a multiple of 3 or 7.
+
+
+Console.WriteLine(Check(15));
+
+
+static bool Check(int num)
+{
+    if (num < 0 )
+        return false;
+
+      if(num%3==0 || num%7==0)
+        return true;
+
+      return false;
+
+}
+
+
 
