@@ -529,7 +529,7 @@ Console.WriteLine($"Hexa value : {input} \n Decimal value {decNumber}");
 
 
 // P8: Write a C# program to multiply the corresponding elements of two integer arrays.
-
+/*
 
 int[] firstArray = { 1, 3, -5, 4 };
 
@@ -563,3 +563,25 @@ foreach(int element in result)
     return multipliedArray;
        
 }
+*/
+
+
+
+// P9 :  Write a C# program to create a string of four copies, taking the last four characters from a given string.
+// If the given string is less than 4, return the original one.
+
+string s = "Hello This is your captain speaking";
+
+Console.WriteLine(last4chars(s));
+
+static string last4chars(string s)
+{
+    if (s.Length <= 4)
+    {
+        return s;
+    }
+
+   return s.Substring((s.Length - 4), 4);
+
+}
+
